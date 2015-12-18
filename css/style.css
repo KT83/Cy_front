@@ -26,3 +26,8 @@ body{
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
 }
+
+.select-field{
+  background-color: #fff;
+  color: #00acc1;
+}
