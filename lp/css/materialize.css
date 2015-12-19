@@ -6104,7 +6104,6 @@ button.btn-floating {
   background-color: #fff;
   margin: 0;
   display: none;
-  width: 100%;
   min-width: 100px;
   max-height: 650px;
   overflow-y: auto;
@@ -6112,7 +6111,6 @@ button.btn-floating {
   position: absolute;
   z-index: 999;
   will-change: width, height; }
-
   .dropdown-content li {
     clear: both;
     color: rgba(0, 0, 0, 0.87);
@@ -6131,7 +6129,7 @@ button.btn-floating {
       height: 1px; }
     .dropdown-content li > a, .dropdown-content li > span {
       font-size: 16px;
-      color: #00acc1;
+      color: #26a69a;
       display: block;
       line-height: 22px;
       padding: 14px 16px; }
@@ -6142,7 +6140,6 @@ button.btn-floating {
     .dropdown-content li > a > i {
       height: inherit;
       line-height: inherit; }
-
 
 /*!
  * Waves v0.6.0
