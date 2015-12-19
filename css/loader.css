@@ -1,8 +1,3 @@
-@import "compass/css3";
-
-$loader-ring-size: 240px;
-$loader-ring-border-size: 4px;
-
 .relative {
   position: relative;
 }
@@ -11,50 +6,37 @@ $loader-ring-border-size: 4px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: $loader-ring-size/-2 0 0 $loader-ring-size/-2;
-  width: $loader-ring-size;
-  height: $loader-ring-size;
+  margin: -120px 0 0 -120px;
+  width: 240px;
+  height: 240px;
 }
 
 .loader-ring-light {
-  width: $loader-ring-size;
-  height: $loader-ring-size;
-  @include border-radius($loader-ring-size);
-  @include box-shadow(0 $loader-ring-border-size 0 lighten(#0087bf, 10%) inset);
+  width: 240px;
+  height: 240px;
+  -moz-border-radius: 240px;
+  -webkit-border-radius: 240px;
+  border-radius: 240px;
+  -moz-box-shadow: 0 4px 0 #00abf2 inset;
+  -webkit-box-shadow: 0 4px 0 #00abf2 inset;
+  box-shadow: 0 4px 0 #00abf2 inset;
   animation: rotate-360 2s linear infinite;
-}
-
-
-.loader-ring-track {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: $loader-ring-size;
-  height: $loader-ring-size;
-  @include border-radius($loader-ring-size);
-  @include box-shadow(
-   0 0 10px $loader-ring-border-size rgba(black, .3) inset
-  );
-
-  p {
-    text-align: center;
-    position: relative;
-    bottom: -33%;
-    color: white;
-    font-family: 'Open Sans Light';
-    font-size: 22px;
-  }
 }
 
 @keyframes rotate-360 {
   from {
-    @include rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
   to {
-    @include rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 body {
-  background-color: rgba(black, .87);
+  background-color: rgba(0, 0, 0, 0.87);
 }
