@@ -1,0 +1,33 @@
+body{
+  background-color: #FFFFFF;
+}
+
+.nav-bar{
+  background-color: #21B9D4;
+}
+
+.cy-card{
+  background-color: #21B9D4;
+}
+
+
+.item-btn {
+  background-color: #eee;
+  color: #00acc1;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.select-field{
+  background-color: #fff;
+  color: #00acc1;
+}
